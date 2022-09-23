@@ -5,9 +5,7 @@ function book(title, author, pages, read) {
     this.author = author
     this.pages = pages
     this.read = read
-    this.info = function() {
-        console.log(title, author, pages, read)
-    }
+    this.info = title, author, pages, read
 }
 
 const theHobbit = new book('The Hobbit', 'J.R.R. Tolkien', '295 pages', 'read')
@@ -26,5 +24,5 @@ for (let i = 0; i < myLibrary.length; i++) {
     let div = document.createElement('div');
     div.className = 'book'
     document.body.appendChild(div);
-    // div.innerHTML = myLibrary(i);
+    div.innerHTML = myLibrary[i].info;
 }
