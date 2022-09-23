@@ -20,3 +20,11 @@ function addBookToLibrary(){
 }
 addBookToLibrary()
 console.log(myLibrary)
+
+// trying to create a loop that will add a div and html for each book
+for (let i = 0; i < myLibrary.length; i++) {
+    let div = document.createElement('div');
+    div.className = 'book'
+    document.body.appendChild(div);
+    // div.innerHTML = myLibrary(i);
+}
